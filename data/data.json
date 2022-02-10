@@ -1,0 +1,121 @@
+{
+  "response": {
+    "GeoObjectCollection": {
+      "metaDataProperty": {
+        "GeocoderResponseMetaData": {
+          "request": "Бишкек, ибраимова улица, дом 181",
+          "results": "10",
+          "found": "2"
+        }
+      },
+      "featureMember": [
+        {
+          "GeoObject": {
+            "metaDataProperty": {
+              "GeocoderMetaData": {
+                "precision": "exact",
+                "text": "Киргизия, Бишкек, улица Ибраимова, 181",
+                "kind": "house",
+                "Address": {
+                  "country_code": "KG",
+                  "formatted": "Киргизия, Бишкек, улица Ибраимова, 181",
+                  "Components": [
+                    { "kind": "country", "name": "Киргизия" },
+                    {
+                      "kind": "province",
+                      "name": "город республиканского подчинения Бишкек"
+                    },
+                    { "kind": "locality", "name": "Бишкек" },
+                    { "kind": "street", "name": "улица Ибраимова" },
+                    { "kind": "house", "name": "181" }
+                  ]
+                },
+                "AddressDetails": {
+                  "Country": {
+                    "AddressLine": "Киргизия, Бишкек, улица Ибраимова, 181",
+                    "CountryNameCode": "KG",
+                    "CountryName": "Киргизия",
+                    "AdministrativeArea": {
+                      "AdministrativeAreaName": "город республиканского подчинения Бишкек",
+                      "Locality": {
+                        "LocalityName": "Бишкек",
+                        "Thoroughfare": {
+                          "ThoroughfareName": "улица Ибраимова",
+                          "Premise": { "PremiseNumber": "181" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "name": "улица Ибраимова, 181",
+            "description": "Бишкек, Киргизия",
+            "boundedBy": {
+              "Envelope": {
+                "lowerCorner": "74.613789 42.88027",
+                "upperCorner": "74.622 42.886308"
+              }
+            },
+            "Point": { "pos": "74.617894 42.883289" }
+          }
+        },
+        {
+          "GeoObject": {
+            "metaDataProperty": {
+              "GeocoderMetaData": {
+                "precision": "near",
+                "text": "Киргизия, Бишкек, жилой массив Дордой, улица Ибраимова, 171",
+                "kind": "house",
+                "Address": {
+                  "country_code": "KG",
+                  "formatted": "Киргизия, Бишкек, жилой массив Дордой, улица Ибраимова, 171",
+                  "Components": [
+                    { "kind": "country", "name": "Киргизия" },
+                    {
+                      "kind": "province",
+                      "name": "город республиканского подчинения Бишкек"
+                    },
+                    { "kind": "locality", "name": "Бишкек" },
+                    { "kind": "district", "name": "жилой массив Дордой" },
+                    { "kind": "street", "name": "улица Ибраимова" },
+                    { "kind": "house", "name": "171" }
+                  ]
+                },
+                "AddressDetails": {
+                  "Country": {
+                    "AddressLine": "Киргизия, Бишкек, жилой массив Дордой, улица Ибраимова, 171",
+                    "CountryNameCode": "KG",
+                    "CountryName": "Киргизия",
+                    "AdministrativeArea": {
+                      "AdministrativeAreaName": "город республиканского подчинения Бишкек",
+                      "Locality": {
+                        "LocalityName": "Бишкек",
+                        "DependentLocality": {
+                          "DependentLocalityName": "жилой массив Дордой",
+                          "Thoroughfare": {
+                            "ThoroughfareName": "улица Ибраимова",
+                            "Premise": { "PremiseNumber": "171" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "name": "улица Ибраимова, 171",
+            "description": "жилой массив Дордой, Бишкек, Киргизия",
+            "boundedBy": {
+              "Envelope": {
+                "lowerCorner": "74.623563 42.941495",
+                "upperCorner": "74.631773 42.947527"
+              }
+            },
+            "Point": { "pos": "74.627668 42.944511" }
+          }
+        }
+      ]
+    }
+  }
+}

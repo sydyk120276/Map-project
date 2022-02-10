@@ -11,6 +11,7 @@ const config = {
   },
   devServer: {
     hot: true,
+    open: true,
     historyApiFallback: true,
     port: 8081,
     host: "localhost",
