@@ -1,0 +1,11 @@
+# Node_modules
+
+node_modules
+
+# Enviromints
+.env
+
+# Misc
+.DS_Store
+dist
+yarn-error.log
