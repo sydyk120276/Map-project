@@ -42,7 +42,8 @@ server.get('/', (req, res) => {
    const address = await axios(url)
      .then(({ data }) => {
        console.log("data: ", data);
-       writeFile(`${__dirname}/data/data.json`, JSON.stringify(data), "utf-8")
+       writeFile(`${__dirname}/data/data.json`, 
+       JSON.stringify(data.response.GeoObjectCollection.featureMember[1].GeoObject.Point), "utf-8")
        return data;
      })
      .catch((err) => err);
