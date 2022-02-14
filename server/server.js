@@ -54,13 +54,15 @@ server.get('/', (req, res) => {
      .then((cordinat) => {
        let obj = {
          AddressLine:
-           cordinat.GeoObjectCollection.metaDataProperty
-             .GeocoderResponseMetaData.request,
+           cordinat.GeoObjectCollection.featureMember[1].GeoObject.description,
          shirota:
-           cordinat.GeoObjectCollection.featureMember[1].GeoObject.Point.pos.split(" ")[1],
+           cordinat.GeoObjectCollection.featureMember[1].GeoObject.Point.pos.split(
+             " "
+           )[1],
          dolgota:
-           cordinat.GeoObjectCollection.featureMember[1].GeoObject.Point.pos
-             .split(" ")[0]
+           cordinat.GeoObjectCollection.featureMember[1].GeoObject.Point.pos.split(
+             " "
+           )[0],
        };
       writeFile(`${__dirname}/data/data.json`, JSON.stringify(obj), "utf-8");
     })
