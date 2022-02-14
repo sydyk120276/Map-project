@@ -41,11 +41,30 @@ server.get('/', (req, res) => {
   server.get('/api/v1/adress',async (req, res) => {
    const address = await axios(url)
      .then(({ data }) => {
-       console.log("data: ", data);
-       writeFile(`${__dirname}/data/data.json`, 
-       JSON.stringify(data.response.GeoObjectCollection.featureMember[1].GeoObject.Point), "utf-8")
-       return data;
+       return data.response;
+
+       //  writeFile(
+       //    `${__dirname}/data/data.json`,
+       //    JSON.stringify(
+       //      data.response.GeoObjectCollection.featureMember[1].GeoObject
+       //    ),
+       //    "utf-8"
+       //  );
      })
+     .then((cordinat) => {
+       let obj = {
+         AddressLine:
+           cordinat.GeoObjectCollection.metaDataProperty
+             .GeocoderResponseMetaData.request,
+         shirota:
+           cordinat.GeoObjectCollection.featureMember[1].GeoObject.Point.pos.split(" ")[1],
+         dolgota:
+           cordinat.GeoObjectCollection.featureMember[1].GeoObject.Point.pos
+             .split(" ")[0]
+       };
+      writeFile(`${__dirname}/data/data.json`, JSON.stringify(obj), "utf-8");
+    })
+
      .catch((err) => err);
     res.json(address)
   })
