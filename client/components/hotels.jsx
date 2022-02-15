@@ -10,8 +10,7 @@ import Header from "./header";
 
 const Hotels = () => {
   let myIcon = L.icon({
-    iconUrl:
-      "https://cdn-icons.flaticon.com/png/512/2059/premium/2059106.png?token=exp=1644925406~hmac=ab946567f5313d7b559b6c6e7e64c009",
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/3313/3313545.png",
     iconSize: [20, 20],
   });
 

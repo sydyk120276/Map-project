@@ -270,9 +270,9 @@ server.get("/api/v1/shaurma", async (req, res) => {
     })
   );
   console.log("obj:______", obj);
-  writeFile(`${__dirname}/data/shaurma.json`, JSON.stringify(obj), "utf-8");
+  writeFile(`${__dirname}/data/shaurma.json`, JSON.stringify(obj), "utf-8")
 
-  console.log("address:____", obj);
+  console.log("address:____", obj)
   res.json(obj);
 });
 

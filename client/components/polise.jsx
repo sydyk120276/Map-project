@@ -10,8 +10,7 @@ import Header from "./header";
 
 const Police = () => {
   let myIcon = L.icon({
-    iconUrl:
-      "https://cdn-icons.flaticon.com/png/512/3270/premium/3270987.png?token=exp=1644925192~hmac=3b7a648f055af6e382ac45cf679df36b",
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/1022/1022306.png",
     iconSize: [20, 20],
   });
 

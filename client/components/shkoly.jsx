@@ -10,8 +10,7 @@ import Header from "./header";
 
 const Shkoly = () => {
   let myIcon = L.icon({
-    iconUrl:
-      "https://cdn-icons.flaticon.com/png/512/1183/premium/1183386.png?token=exp=1644925575~hmac=6604e9539d582b9b9aa49d37aa3ad596",
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/999/999735.png",
     iconSize: [20, 20],
   });
 
