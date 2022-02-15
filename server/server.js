@@ -195,7 +195,7 @@ let adressPolice = [
 server.get("/api/v1/police", async (req, res) => {
   let obj = [];
   await Promise.all(
-    adressHotels.map(async (elem) => {
+    adressPolice.map(async (elem) => {
       return await axios(
         encodeURI(
           `https://geocode-maps.yandex.ru/1.x/?format=json&apikey=8201c1c3-1913-411b-9300-e3de7614b6f7&geocode=${elem}`
