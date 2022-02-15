@@ -2,22 +2,21 @@ import React from "react";
 
 import L from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "../assets/styles/style.scss"
-import placesData from '../../data/data.json'
+import "../assets/styles/style.scss";
+import shcoolData from "../../data/shcool.json";
 
 import Buttons from "./button";
 import Header from "./header";
 
-
-const Maps = () => {
-
+const Shkoly = () => {
   let myIcon = L.icon({
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/3448/3448422.png",
-    iconSize: [25, 25],
+    iconUrl:
+      "https://cdn-icons.flaticon.com/png/512/1183/premium/1183386.png?token=exp=1644925575~hmac=6604e9539d582b9b9aa49d37aa3ad596",
+    iconSize: [20, 20],
   });
 
   return (
-    <div className="container ">
+    <div className="container">
       <div className="font">
         <div>
           <Header />
@@ -25,10 +24,9 @@ const Maps = () => {
         <div className="btn">
           <Buttons />
         </div>
-
         <MapContainer center={[42.874622, 74.569763]} zoom={12}>
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-          {placesData.map((elem) => (
+          {shcoolData.map((elem) => (
             <Marker
               key={elem.shirota}
               position={[Number(elem.shirota), Number(elem.dolgota)]}
@@ -43,4 +41,4 @@ const Maps = () => {
   );
 };
 
-export default Maps;
+export default Shkoly;
