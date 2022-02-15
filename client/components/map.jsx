@@ -53,34 +53,16 @@ const Maps = () => {
   });
 
   return (
-    // <div className="container">
-    //   <MapContainer
-    //     center={[42.874622, 74.569763]}
-    //     zoom={13}
-    //     scrollWheelZoom={true}
-    //   >
-    //         <TileLayer
-    //   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    //   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    // />
-
-    //     {placesData.map((el, index) => {
-    //       <Marker
-    //         key={index}
-    //         position={[Number(el.dolgota), Number(el.shirota)]}
-    //       >
-    //         <Popup>{el.AddressLine}</Popup>
-    //       </Marker>;
-    //     })}
-    //   </MapContainer>
-    // </div>
     <div className="container">
       <MapContainer center={[42.874622, 74.569763]} zoom={13}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[aaa, bbb]} icon={myIcon}>
+        <Marker
+          position={[Number(placesData.shirota), Number(placesData.dolgota)]}
+          icon={myIcon}
+        >
           <Popup>{placesData.AddressLine}</Popup>
         </Marker>
       </MapContainer>
